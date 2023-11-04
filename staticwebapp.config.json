@@ -1,0 +1,11 @@
+{
+    "trailingSlash": "never",
+    "routes": [
+        {
+            "route": "/*",
+            "allowedRoles": [
+                "authenticated"
+            ]
+        }
+    ]
+}
