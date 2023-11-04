@@ -135,8 +135,10 @@ body {
     font-family: "Poppins", sans-serif;
   }
   
+
+  /* #5fcf80 original green color code*/
   #header .logo a {
-    color: #5fcf80;
+    color: lightskyblue;
   }
   
   #header .logo img {
@@ -148,7 +150,7 @@ body {
   */
   .get-started-btn {
     margin-left: 22px;
-    background: #5fcf80;
+    background: lightskyblue;
     color: #fff;
     border-radius: 50px;
     padding: 8px 25px;
@@ -169,7 +171,8 @@ body {
       padding: 6px 18px;
     }
   }
-  
+
+
   /*--------------------------------------------------------------
   # Navigation Menu
   --------------------------------------------------------------*/
@@ -460,7 +463,39 @@ body {
     background: #5fcf80;
     border: 2px solid #5fcf80;
   }
+
   
+  #search-bar-container {
+    justify-content: center;
+  }
+
+  .search-bar {
+
+    justify-content: left;
+    background-color: white;
+    border-radius: 25px;
+
+    height: 100%;
+    width: 35%;
+    
+  }
+
+  .search-bar:focus {
+    
+    outline: none;
+
+  }
+
+  #text-entry {
+    outline: none;
+    border: none;
+
+    width: 100%;
+    border-radius: 25px;
+
+  }
+
+
   @media (min-width: 1024px) {
     #hero {
       background-attachment: fixed;
