@@ -15,12 +15,12 @@ body {
   }
   
   a {
-    color: #5fcf80;
+    color: lightskyblue;
     text-decoration: none;
   }
   
   a:hover {
-    color: #86db9f;
+    color: lightskyblue;
     text-decoration: none;
   }
   
@@ -43,7 +43,7 @@ body {
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #5fcf80;
+    background: lightskyblue;
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -52,13 +52,13 @@ body {
   
   .back-to-top i {
     font-size: 28px;
-    color: #fff;
+    color: white;
     line-height: 0;
   }
   
   .back-to-top:hover {
     background: #7ed899;
-    color: #fff;
+    color: white;
   }
   
   .back-to-top.active {
@@ -77,7 +77,7 @@ body {
     bottom: 0;
     z-index: 9999;
     overflow: hidden;
-    background: #fff;
+    background: white;
   }
   
   #preloader:before {
@@ -85,9 +85,9 @@ body {
     position: fixed;
     top: calc(50% - 30px);
     left: calc(50% - 30px);
-    border: 6px solid #5fcf80;
-    border-top-color: #fff;
-    border-bottom-color: #fff;
+    border: 6px solid lightskyblue;
+    border-top-color: white;
+    border-bottom-color: white;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -117,7 +117,7 @@ body {
   # Header
   --------------------------------------------------------------*/
   #header {
-    background: #fff;
+    background: white;
     transition: all 0.5s;
     z-index: 997;
     padding: 15px 0;
@@ -136,7 +136,7 @@ body {
   }
   
 
-  /* #5fcf80 original green color code*/
+  /* lightskyblue original green color code*/
   #header .logo a {
     color: lightskyblue;
   }
@@ -151,7 +151,7 @@ body {
   .get-started-btn {
     margin-left: 22px;
     background: lightskyblue;
-    color: #fff;
+    color: white;
     border-radius: 50px;
     padding: 8px 25px;
     white-space: nowrap;
@@ -161,8 +161,8 @@ body {
   }
   
   .get-started-btn:hover {
-    background: #3ac162;
-    color: #fff;
+    background: lightsteelblue;
+    color: white;
   }
   
   @media (max-width: 768px) {
@@ -204,7 +204,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-weight: 500;
-    color: #37423b;
+    color: darkslategray;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -220,7 +220,7 @@ body {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #5fcf80;
+    color: lightskyblue;
   }
   
   .navbar .dropdown ul {
@@ -233,7 +233,7 @@ body {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: #fff;
+    background: white;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.3s;
     border-radius: 4px;
@@ -257,7 +257,7 @@ body {
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover>a {
-    color: #5fcf80;
+    color: lightskyblue;
   }
   
   .navbar .dropdown:hover>ul {
@@ -293,7 +293,7 @@ body {
   * Mobile Navigation 
   */
   .mobile-nav-toggle {
-    color: #37423b;
+    color: darkslategray;
     font-size: 28px;
     cursor: pointer;
     display: none;
@@ -302,7 +302,7 @@ body {
   }
   
   .mobile-nav-toggle.bi-x {
-    color: #fff;
+    color: white;
   }
   
   @media (max-width: 991px) {
@@ -342,7 +342,7 @@ body {
     left: 15px;
     padding: 10px 0;
     border-radius: 6px;
-    background-color: #fff;
+    background-color: white;
     overflow-y: auto;
     transition: 0.3s;
   }
@@ -351,13 +351,13 @@ body {
   .navbar-mobile a:focus {
     padding: 10px 20px;
     font-size: 15px;
-    color: #37423b;
+    color: darkslategray;
   }
   
   .navbar-mobile a:hover,
   .navbar-mobile .active,
   .navbar-mobile li:hover>a {
-    color: #5fcf80;
+    color: lightskyblue;
   }
   
   .navbar-mobile .getstarted,
@@ -373,7 +373,7 @@ body {
     z-index: 99;
     opacity: 1;
     visibility: visible;
-    background: #fff;
+    background: white;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   }
   
@@ -392,7 +392,7 @@ body {
   .navbar-mobile .dropdown ul a:hover,
   .navbar-mobile .dropdown ul .active:hover,
   .navbar-mobile .dropdown ul li:hover>a {
-    color: #5fcf80;
+    color: lightskyblue;
   }
   
   .navbar-mobile .dropdown>.dropdown-active {
@@ -435,12 +435,12 @@ body {
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
-    color: #fff;
+    color: white;
     font-family: "Poppins", sans-serif;
   }
   
   #hero h2 {
-    color: #eee;
+    color: white;
     margin: 10px 0 0 0;
     font-size: 24px;
   }
@@ -455,13 +455,13 @@ body {
     border-radius: 50px;
     transition: 0.5s;
     margin-top: 30px;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid white;
+    color: white;
   }
   
   #hero .btn-get-started:hover {
-    background: #5fcf80;
-    border: 2px solid #5fcf80;
+    background: lightskyblue;
+    border: 2px solid lightskyblue;
   }
 
   
@@ -472,6 +472,7 @@ body {
   .search-bar {
 
     justify-content: left;
+    align-items: center;
     background-color: white;
     border-radius: 25px;
 
@@ -486,10 +487,15 @@ body {
 
   }
 
+  #search-icon {
+    padding-left: 15px;
+  }
+
   #text-entry {
     outline: none;
     border: none;
 
+    height: 50px;
     width: 100%;
     border-radius: 25px;
 
@@ -516,6 +522,10 @@ body {
       font-size: 18px;
       line-height: 24px;
     }
+
+    .search-bar {
+      width: 75%;
+    }
   }
   
   /*--------------------------------------------------------------
@@ -527,7 +537,7 @@ body {
   }
   
   .section-bg {
-    background-color: #f6f7f6;
+    background-color: white;
   }
   
   .section-title {
@@ -542,7 +552,7 @@ body {
     margin: 0 0 5px 0;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #aaaaaa;
+    color: lightsteelblue;
     font-family: "Poppins", sans-serif;
   }
   
@@ -551,7 +561,7 @@ body {
     width: 120px;
     height: 1px;
     display: inline-block;
-    background: #9ae1af;
+    background: lightskyblue;
     margin: 4px 10px;
   }
   
@@ -562,15 +572,15 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    color: #37423b;
+    color: darkslategrey;
   }
   
   .breadcrumbs {
     margin-top: 73px;
     text-align: center;
-    background: #5fcf80;
+    background: lightskyblue;
     padding: 30px 0;
-    color: #fff;
+    color: white;
   }
   
   @media (max-width: 992px) {
@@ -609,12 +619,12 @@ body {
   .about .content ul i {
     font-size: 20px;
     padding-right: 4px;
-    color: #5fcf80;
+    color: lightskyblue;
   }
   
   .about .content .learn-more-btn {
-    background: #5fcf80;
-    color: #fff;
+    background: lightskyblue;
+    color: white;
     border-radius: 50px;
     padding: 8px 25px 9px 25px;
     white-space: nowrap;
@@ -625,7 +635,7 @@ body {
   
   .about .content .learn-more-btn:hover {
     background: #3ac162;
-    color: #fff;
+    color: white;
   }
   
   @media (max-width: 768px) {
@@ -645,7 +655,7 @@ body {
   .counts .counters span {
     font-size: 48px;
     display: block;
-    color: #5fcf80;
+    color: lightskyblue;
     font-weight: 700;
   }
   
@@ -663,9 +673,9 @@ body {
   --------------------------------------------------------------*/
   .why-us .content {
     padding: 30px;
-    background: #5fcf80;
+    background: lightskyblue;
     border-radius: 4px;
-    color: #fff;
+    color: white;
   }
   
   .why-us .content h3 {
@@ -682,7 +692,7 @@ body {
     display: inline-block;
     background: rgba(255, 255, 255, 0.2);
     padding: 6px 30px 8px 30px;
-    color: #fff;
+    color: white;
     border-radius: 50px;
     transition: all ease-in-out 0.4s;
   }
@@ -692,24 +702,24 @@ body {
   }
   
   .why-us .content .more-btn:hover {
-    color: #5fcf80;
-    background: #fff;
+    color: lightskyblue;
+    background: white;
   }
   
   .why-us .icon-boxes .icon-box {
     text-align: center;
-    background: #fff;
+    background: white;
     padding: 40px 30px;
     width: 100%;
-    border: 1px solid #eef0ef;
+    border: 1px solid #eeeff0;
   }
   
   .why-us .icon-boxes .icon-box i {
     font-size: 32px;
     padding: 18px;
-    color: #5fcf80;
+    color: lightskyblue;
     margin-bottom: 30px;
-    background: #ecf9f0;
+    background: #eaf7ff;
     border-radius: 50px;
   }
   
@@ -721,7 +731,7 @@ body {
   
   .why-us .icon-boxes .icon-box p {
     font-size: 15px;
-    color: #848484;
+    color: lightsteelblue;
   }
   
   /*--------------------------------------------------------------
@@ -754,16 +764,16 @@ body {
   }
   
   .features .icon-box h3 a {
-    color: #37423b;
+    color: darkslategray;
     transition: 0.3s;
   }
   
   .features .icon-box:hover {
-    border-color: #5fcf80;
+    border-color: lightskyblue;
   }
   
   .features .icon-box:hover h3 a {
-    color: #5fcf80;
+    color: lightskyblue;
   }
   
   /*--------------------------------------------------------------
@@ -784,12 +794,12 @@ body {
   }
   
   .courses .course-content h3 a {
-    color: #37423b;
+    color: #373a42;
     transition: 0.3s;
   }
   
   .courses .course-content h3 a:hover {
-    color: #5fcf80;
+    color: lightskyblue;
   }
   
   .courses .course-content p {
@@ -799,9 +809,9 @@ body {
   
   .courses .course-content h4 {
     font-size: 14px;
-    background: #5fcf80;
+    background: lightskyblue;
     padding: 7px 14px;
-    color: #fff;
+    color: white;
     margin: 0;
   }
   
@@ -809,7 +819,7 @@ body {
     margin: 0;
     font-weight: 700;
     font-size: 18px;
-    color: #37423b;
+    color: #373742;
   }
   
   .courses .trainer {
@@ -826,12 +836,12 @@ body {
     padding-left: 10px;
     font-weight: 600;
     font-size: 16px;
-    color: #5a6c60;
+    color: #5a5b6c;
   }
   
   .courses .trainer .trainer-rank {
     font-size: 18px;
-    color: #657a6d;
+    color: lightslategray;
   }
   
   /*--------------------------------------------------------------
@@ -840,7 +850,7 @@ body {
   .trainers .member {
     text-align: center;
     margin-bottom: 20px;
-    background: #fff;
+    background: white;
     border: 1px solid #eef0ef;
   }
   
@@ -868,7 +878,7 @@ body {
     padding-top: 10px;
     font-size: 14px;
     font-style: italic;
-    color: #aaaaaa;
+    color: lightsteelblue;
   }
   
   .trainers .member .social {
@@ -876,12 +886,12 @@ body {
   }
   
   .trainers .member .social a {
-    color: #7e9486;
+    color: rgb(147, 161, 181);
     transition: 0.3s;
   }
   
   .trainers .member .social a:hover {
-    color: #5fcf80;
+    color: lightskyblue;
   }
   
   .trainers .member .social i {
@@ -908,13 +918,13 @@ body {
     min-height: 200px;
     border: 1px solid #eef0ef;
     position: relative;
-    background: #fff;
+    background: white;
   }
   
   .testimonials .testimonial-item .testimonial-img {
     width: 90px;
     border-radius: 10px;
-    border: 6px solid #fff;
+    border: 6px solid white;
     position: absolute;
     left: -45px;
   }
@@ -923,7 +933,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0 5px 0;
-    color: #111;
+    color: black;
   }
   
   .testimonials .testimonial-item h4 {
@@ -934,7 +944,7 @@ body {
   
   .testimonials .testimonial-item .quote-icon-left,
   .testimonials .testimonial-item .quote-icon-right {
-    color: #c1ecce;
+    color: lightskyblue;
     font-size: 26px;
   }
   
@@ -964,13 +974,13 @@ body {
   .testimonials .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
-    background-color: #fff;
+    background-color: white;
     opacity: 1;
-    border: 1px solid #5fcf80;
+    border: 1px solid lightskyblue;
   }
   
   .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #5fcf80;
+    background-color: lightskyblue;
   }
   
   @media (max-width: 767px) {
@@ -1022,13 +1032,13 @@ body {
     display: block;
     width: 60px;
     height: 1px;
-    background: #5fcf80;
+    background: lightskyblue;
     bottom: 0;
     left: 0;
   }
   
   .course-details .course-info {
-    background: #f6f7f6;
+    background: white;
     padding: 10px 15px;
     margin-bottom: 15px;
   }
@@ -1046,7 +1056,7 @@ body {
   }
   
   .course-details .course-info a {
-    color: #657a6d;
+    color: slategrey;
   }
   
   /*--------------------------------------------------------------
@@ -1073,12 +1083,12 @@ body {
   }
   
   .cource-details-tabs .nav-link:hover {
-    color: #5fcf80;
+    color: lightskyblue;
   }
   
   .cource-details-tabs .nav-link.active {
-    color: #5fcf80;
-    border-color: #5fcf80;
+    color: lightskyblue;
+    border-color: lightskyblue;
   }
   
   .cource-details-tabs .tab-pane.active {
@@ -1107,8 +1117,8 @@ body {
     }
   
     .cource-details-tabs .nav-link.active {
-      color: #fff;
-      background: #5fcf80;
+      color: white;
+      background: lightskyblue;
     }
   }
   
@@ -1137,8 +1147,8 @@ body {
   
   .events .card-body {
     z-index: 10;
-    background: #fff;
-    border-top: 4px solid #fff;
+    background: white;
+    border-top: 4px solid white;
     padding: 30px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     margin-top: -60px;
@@ -1152,7 +1162,7 @@ body {
   }
   
   .events .card-title a {
-    color: #37423b;
+    color: #373842;
     transition: 0.3s;
   }
   
@@ -1169,7 +1179,7 @@ body {
   }
   
   .events .read-more a:hover {
-    color: #5fcf80;
+    color: lightskyblue;
   }
   
   .events .card:hover img {
@@ -1177,11 +1187,11 @@ body {
   }
   
   .events .card:hover .card-body {
-    border-color: #5fcf80;
+    border-color: lightskyblue;
   }
   
   .events .card:hover .card-body .card-title a {
-    color: #5fcf80;
+    color: lightskyblue;
   }
   
   /*--------------------------------------------------------------
@@ -1189,7 +1199,7 @@ body {
   --------------------------------------------------------------*/
   .pricing .box {
     padding: 20px;
-    background: #fff;
+    background: white;
     text-align: center;
     border: 1px solid #eef0ef;
     border-radius: 0;
@@ -1209,7 +1219,7 @@ body {
   
   .pricing h4 {
     font-size: 36px;
-    color: #5fcf80;
+    color: lightskyblue;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
     margin-bottom: 20px;
@@ -1241,7 +1251,7 @@ body {
   }
   
   .pricing ul i {
-    color: #5fcf80;
+    color: lightskyblue;
     font-size: 18px;
     padding-right: 4px;
   }
@@ -1259,11 +1269,11 @@ body {
   }
   
   .pricing .btn-buy {
-    background: #5fcf80;
+    background: lightskyblue;
     display: inline-block;
     padding: 8px 35px;
     border-radius: 50px;
-    color: #fff;
+    color: white;
     transition: none;
     font-size: 14px;
     font-weight: 400;
@@ -1277,8 +1287,8 @@ body {
   }
   
   .pricing .featured h3 {
-    color: #fff;
-    background: #5fcf80;
+    color: white;
+    background: lightskyblue;
   }
   
   .pricing .advanced {
@@ -1290,8 +1300,8 @@ body {
     z-index: 1;
     font-size: 14px;
     padding: 1px 0 3px 0;
-    background: #5fcf80;
-    color: #fff;
+    background: lightskyblue;
+    color: white;
   }
   
   /*--------------------------------------------------------------
@@ -1303,12 +1313,12 @@ body {
   
   .contact .info {
     width: 100%;
-    background: #fff;
+    background: white;
   }
   
   .contact .info i {
     font-size: 20px;
-    color: #5fcf80;
+    color: lightskyblue;
     float: left;
     width: 44px;
     height: 44px;
@@ -1343,13 +1353,13 @@ body {
   .contact .info .email:hover i,
   .contact .info .address:hover i,
   .contact .info .phone:hover i {
-    background: #5fcf80;
-    color: #fff;
+    background: lightskyblue;
+    color: white;
   }
   
   .contact .php-email-form {
     width: 100%;
-    background: #fff;
+    background: white;
   }
   
   .contact .php-email-form .form-group {
@@ -1358,7 +1368,7 @@ body {
   
   .contact .php-email-form .error-message {
     display: none;
-    color: #fff;
+    color: white;
     background: #ed3c0d;
     text-align: left;
     padding: 15px;
@@ -1371,7 +1381,7 @@ body {
   
   .contact .php-email-form .sent-message {
     display: none;
-    color: #fff;
+    color: white;
     background: #18d26e;
     text-align: center;
     padding: 15px;
@@ -1380,7 +1390,7 @@ body {
   
   .contact .php-email-form .loading {
     display: none;
-    background: #fff;
+    background: white;
     text-align: center;
     padding: 15px;
   }
@@ -1393,7 +1403,7 @@ body {
     height: 24px;
     margin: 0 10px -6px 0;
     border: 3px solid #18d26e;
-    border-top-color: #eee;
+    border-top-color: white;
     animation: animate-loading 1s linear infinite;
   }
   
@@ -1406,7 +1416,7 @@ body {
   
   .contact .php-email-form input:focus,
   .contact .php-email-form textarea:focus {
-    border-color: #5fcf80;
+    border-color: lightskyblue;
   }
   
   .contact .php-email-form input {
@@ -1418,10 +1428,10 @@ body {
   }
   
   .contact .php-email-form button[type=submit] {
-    background: #5fcf80;
+    background: lightskyblue;
     border: 0;
     padding: 10px 35px;
-    color: #fff;
+    color: white;
     transition: 0.4s;
     border-radius: 50px;
   }
@@ -1444,7 +1454,7 @@ body {
   # Footer
   --------------------------------------------------------------*/
   #footer {
-    color: #37423b;
+    color: #373842;
     font-size: 14px;
     background: #eef0ef;
   }
@@ -1494,7 +1504,7 @@ body {
   
   #footer .footer-top .footer-links ul i {
     padding-right: 2px;
-    color: #5fcf80;
+    color: lightskyblue;
     font-size: 18px;
     line-height: 1;
   }
@@ -1518,7 +1528,7 @@ body {
   
   #footer .footer-top .footer-links ul a:hover {
     text-decoration: none;
-    color: #5fcf80;
+    color: lightskyblue;
   }
   
   #footer .footer-newsletter {
@@ -1535,7 +1545,7 @@ body {
   
   #footer .footer-newsletter form {
     margin-top: 30px;
-    background: #fff;
+    background: white;
     padding: 6px 10px;
     position: relative;
     border-radius: 50px;
@@ -1558,8 +1568,8 @@ body {
     background: none;
     font-size: 16px;
     padding: 0 20px 2px 20px;
-    background: #5fcf80;
-    color: #fff;
+    background: lightskyblue;
+    color: white;
     transition: 0.3s;
     border-radius: 50px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -1580,14 +1590,14 @@ body {
   }
   
   #footer .credits a:hover {
-    color: #5fcf80;
+    color: lightskyblue;
   }
   
   #footer .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #5fcf80;
-    color: #fff;
+    background: lightskyblue;
+    color: white;
     line-height: 1;
     padding: 8px 0;
     margin-right: 4px;
@@ -1600,6 +1610,6 @@ body {
   
   #footer .social-links a:hover {
     background: #3ac162;
-    color: #fff;
+    color: white;
     text-decoration: none;
   }
