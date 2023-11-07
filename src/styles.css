@@ -472,6 +472,7 @@ body {
   .search-bar {
 
     justify-content: left;
+    align-items: center;
     background-color: white;
     border-radius: 25px;
 
@@ -486,10 +487,15 @@ body {
 
   }
 
+  #search-icon {
+    padding-left: 15px;
+  }
+
   #text-entry {
     outline: none;
     border: none;
 
+    height: 50px;
     width: 100%;
     border-radius: 25px;
 
@@ -515,6 +521,10 @@ body {
     #hero h2 {
       font-size: 18px;
       line-height: 24px;
+    }
+
+    .search-bar {
+      width: 75%;
     }
   }
   
