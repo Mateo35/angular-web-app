@@ -501,6 +501,39 @@ h6 {
   border: 2px solid var(--accent-default-color);
 }
 
+#search-bar-container {
+  justify-content: center;
+}
+
+.search-bar {
+
+  justify-content: left;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+
+  height: 100%;
+  width: 45%;
+
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+#search-icon {
+  padding-left: 15px;
+}
+
+#text-entry {
+  outline: none;
+  border: none;
+
+  height: 50px;
+  width: 100%;
+  border-radius: 25px;
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -982,8 +1015,9 @@ section {
 @media (max-width: 767px) {
   .testimonials .testimonial-wrap {
     padding-left: 0;
+  }
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     #hero {
       height: 100vh;
     }
