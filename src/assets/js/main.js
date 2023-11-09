@@ -126,3 +126,18 @@
   new PureCounter();
 
 })()
+
+window.onkeyup = keyup;
+
+var userSearch;
+
+function keyup(e) {
+  
+  userSearch = e.target.value;
+
+  if (e.keyCode == 13) {
+    // just for testing
+    // this is where you would put the call to the api, maybe
+    console.log(userSearch);
+  }
+}
