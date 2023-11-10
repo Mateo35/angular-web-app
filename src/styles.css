@@ -534,6 +534,17 @@ h6 {
   border-radius: 25px;
 }
 
+#search-logo {
+  margin-bottom: 20%;
+
+
+}
+
+#logo-img {
+  height: 400px;
+  width: 400px;
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -553,6 +564,15 @@ h6 {
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  #search-logo {
+    margin-bottom: 35%;
+  }
+
+  #logo-img {
+    height: 200px;
+    width: 200px;
   }
 }
 
