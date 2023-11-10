@@ -91,7 +91,8 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: var(--main-light-color);;
+  background: var(--main-light-color);
+  ;
 }
 
 #preloader:before {
@@ -509,12 +510,26 @@ h6 {
 
   justify-content: left;
   align-items: center;
-  background-color: white;
+  background-color: var(--main-light-color);
   border-radius: 25px;
 
   margin-top: 10%;
   height: 100%;
   width: 60%;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+
+    justify-content: left;
+    align-items: center;
+    background-color: var(--main-light-color);
+    border-radius: 25px;
+
+    margin-top: 20%;
+    height: 100%;
+    width: 80%;
+  }
 }
 
 .search-bar:focus {
@@ -536,6 +551,12 @@ h6 {
 
 #search-logo {
   margin-bottom: 10%;
+}
+
+@media (max-width: 768px) {
+  #search-logo {
+    margin-bottom: 20%;
+  }
 }
 
 #logo-img {
@@ -1031,17 +1052,17 @@ section {
   .testimonials .testimonial-wrap {
     padding-left: 0;
   }
-  
-@media (max-width: 768px) {
+
+  @media (max-width: 768px) {
     #hero {
       height: 75vh;
     }
-  
+
     #hero h1 {
       font-size: 28px;
       line-height: 36px;
     }
-  
+
     #hero h2 {
       font-size: 18px;
       line-height: 24px;
