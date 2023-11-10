@@ -512,9 +512,9 @@ h6 {
   background-color: white;
   border-radius: 25px;
 
+  margin-top: 10%;
   height: 100%;
-  width: 45%;
-
+  width: 60%;
 }
 
 .search-bar:focus {
@@ -535,14 +535,12 @@ h6 {
 }
 
 #search-logo {
-  margin-bottom: 20%;
-
-
+  margin-bottom: 10%;
 }
 
 #logo-img {
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
 }
 
 @media (min-width: 1024px) {
@@ -564,10 +562,6 @@ h6 {
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
-  }
-
-  #search-logo {
-    margin-bottom: 35%;
   }
 
   #logo-img {
@@ -1051,10 +1045,6 @@ section {
     #hero h2 {
       font-size: 18px;
       line-height: 24px;
-    }
-
-    .search-bar {
-      width: 75%;
     }
   }
 
