@@ -1,10 +1,3 @@
-/**
-* Template Name: Mentor
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -133,3 +126,18 @@
   new PureCounter();
 
 })()
+
+window.onkeyup = keyup;
+
+var userSearch;
+
+function keyup(e) {
+  
+  userSearch = e.target.value;
+
+  if (e.keyCode == 13) {
+    // just for testing
+    // this is where you would put the call to the api, maybe
+    console.log(userSearch);
+  }
+}
