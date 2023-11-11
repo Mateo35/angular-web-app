@@ -127,17 +127,17 @@
 
 })()
 
-window.onkeyup = keyup;
+// window.onkeyup = keyup;
 
-var userSearch;
+// var userSearch;
 
-function keyup(e) {
+// function keyup(e) {
   
-  userSearch = e.target.value;
+//   userSearch = e.target.value;
 
-  if (e.keyCode == 13) {
-    // just for testing
-    // this is where you would put the call to the api, maybe
-    console.log(userSearch);
-  }
-}
+//   if (e.keyCode == 13) {
+//     // just for testing
+//     // this is where you would put the call to the api, maybe
+//     console.log(userSearch);
+//   }
+// }
