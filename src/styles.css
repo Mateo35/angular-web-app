@@ -546,6 +546,9 @@ h6 {
   height: 50px;
   width: 100%;
   border-radius: 25px;
+
+  font-family: "Poppins", sans-serif;
+
 }
 
 #search-logo {
