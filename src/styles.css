@@ -507,7 +507,6 @@ h6 {
 }
 
 .search-bar {
-
   justify-content: left;
   align-items: center;
   background-color: var(--main-light-color);
@@ -547,6 +546,9 @@ h6 {
   height: 50px;
   width: 100%;
   border-radius: 25px;
+
+  font-family: "Poppins", sans-serif;
+
 }
 
 #search-logo {

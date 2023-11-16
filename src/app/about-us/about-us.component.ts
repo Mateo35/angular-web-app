@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AboutUsComponent {
 
+  mateoLinkedIn = 'https://www.linkedin.com/in/mateo-mckee/';
+  mosesLinkedIn = 'https://www.linkedin.com/in/moses-simms-3a0022290/';
 }

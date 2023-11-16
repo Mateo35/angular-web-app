@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SearchService } from './services/search.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'mentor-mole';
+  constructor(private searchService: SearchService) {}
+
+  search(query: string): void {
+    this.searchService.search(query).subscribe(response => {
+      console.log(response);
+    });
+  }
 }
