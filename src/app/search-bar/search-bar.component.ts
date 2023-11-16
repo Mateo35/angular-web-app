@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SearchMediatorService } from '../services/search-mediator.service';
+import { SearchService } from '../services/search.service';
 
 @Component({
   selector: 'app-search-bar',
@@ -7,15 +7,21 @@ import { SearchMediatorService } from '../services/search-mediator.service';
   styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent {
+  query = '';
+  searchResults: any;
 
-  query: string = '';
+  constructor(private searchService: SearchService) {}
 
-  constructor(private searchMediatorService: SearchMediatorService) { }
-
-  performSearch(): void {
-    if (this.query.trim() !== '') {
-      this.searchMediatorService.initiateSearch(this.query).subscribe(response => {
-      });
-    }
+  onSearch() {
+    console.log(this.query);
+    this.searchService.search(this.query).subscribe(
+      (data) => {
+        this.searchResults = data;
+        console.log("Seach result:\n" + this.searchResults);
+      },
+      (error) => {
+        //console.error('Error:', error);
+      }
+    );
   }
 }
