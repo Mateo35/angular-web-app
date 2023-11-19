@@ -13,6 +13,8 @@ export class SearchBarComponent {
   constructor(private searchService: SearchService) {}
 
   onSearch() {
+    //temporary
+    return;
     console.log(this.query);
     this.searchService.search(this.query).subscribe(
       (data) => {
