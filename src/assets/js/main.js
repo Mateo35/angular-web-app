@@ -113,7 +113,7 @@
    */
   window.addEventListener('load', () => {
     AOS.init({
-      duration: 1000,
+      duration: 800,
       easing: 'ease-in-out',
       once: true,
       mirror: false
@@ -127,17 +127,17 @@
 
 })()
 
-window.onkeyup = keyup;
+const select = (el, all = false) => {
+  el = el.trim();
+  if(all)
+    return document.querySelector(el);
+  else
+    return document.querySelector(el);
+}
 
-var userSearch;
-
-function keyup(e) {
-  
-  userSearch = e.target.value;
-
-  if (e.keyCode == 13) {
-    // just for testing
-    // this is where you would put the call to the api, maybe
-    console.log(userSearch);
-  }
+function mobilenav()
+{
+  select('#navbar').classList.toggle('navbar-mobile');
+  this.classList.toggle('bi-list');
+  this.classList.toggle('bi-x');
 }
