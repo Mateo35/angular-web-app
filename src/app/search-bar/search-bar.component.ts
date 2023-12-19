@@ -10,19 +10,18 @@ export class SearchBarComponent {
   query = '';
   searchResults: any;
 
-  constructor(private searchService: SearchService) {}
+  constructor(private searchService: SearchService) { }
 
   onSearch() {
     //temporary
-    return;
     console.log(this.query);
     this.searchService.search(this.query).subscribe(
       (data) => {
         this.searchResults = data;
-        console.log("Seach result:\n" + this.searchResults);
+        console.log('Search Bar Result:', JSON.stringify(this.searchResults, null, 2));
       },
       (error) => {
-        //console.error('Error:', error);
+        console.error('Search Bar Error:', error);
       }
     );
   }
