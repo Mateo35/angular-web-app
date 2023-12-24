@@ -7,9 +7,28 @@ import { SearchService } from '../services/search.service';
   styleUrls: ['./resources.component.css']
 })
 export class ResourcesComponent {
-  inputQueryDisplay = '';
+  searchSummaryText = 'Waiting for input';
 
-  constructor(public searchService: SearchService) { 
-    this.inputQueryDisplay = this.searchService.inputQuery;
+  totalItems = 0;
+  itemsPerPage = 6;
+
+  constructor(public searchService: SearchService) { }
+
+  public onChangeSearchResultEvent(newSearchResult: any)
+  {
+    this.totalItems = newSearchResult.response.value.length;
+    this.searchSummaryText = `Showing results for "${newSearchResult.query}" - ${this.itemsPerPage} in ${this.totalItems}`;
+  }
+
+  //
+
+  ngOnInit(): void {
+    this.searchService.onChangeSearchResult.subscribe((newSearchResult) => {
+      this.onChangeSearchResultEvent(newSearchResult);
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.searchService.onChangeSearchResult.unsubscribe();
   }
 }

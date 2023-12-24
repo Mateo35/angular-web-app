@@ -9,7 +9,7 @@
     /* Take 1/5 of the available space */
     background-color: var(--border-default-color);
     border: 1px solid #f0f0f0;
-    
+
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -57,12 +57,11 @@
 
 .pagination li {
     margin: 0 5px;
-    /* Adjust spacing between pagination items */
 }
 
 .pagination a {
     text-decoration: none;
-    color: var(--main-accent-color);
+    color:  var(--text-default-color)
 }
 
 /* Text */
@@ -72,4 +71,22 @@
     /* Add padding for internal content */
     text-align: left;
     /* Align text to the left */
+}
+
+/* Grid */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 60px;
+    padding: 30px;
+}
+
+.grid-item {
+    background-color: var(--accent-default-color);
+    text-align: center;
+    color: #ffffff;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
 }

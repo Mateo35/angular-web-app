@@ -1,28 +1,38 @@
 <div class="container">
   <div class="split-container">
 
-    <div class="left-tab">
+    <div class="left-tab" data-aos="fade-right">
       <!-- Left tab content here -->
       <app-search-bar [isHomePage]="false"></app-search-bar>
 
     </div>
 
-    <div class="right-results">
+    <div class="right-results" data-aos="fade-left">
 
       <div class="top-rectangle">
-        <!-- Top rectangle content here (text, information) -->
+
         <div class="text-content">
-          <p>Showing results for <strong>'{{inputQueryDisplay}}'</strong> - 8 in 54 results</p>
+          <p>{{searchSummaryText}}</p>
         </div>
 
       </div>
 
       <div class="middle-rectangle">
-        <!-- Middle rectangle content here (search results) -->
+
+        <div class="grid-container">
+          
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+
+        </div>
+
       </div>
 
       <div class="bottom-rectangle">
-        <!-- Bottom rectangle content here (pagination and other information) -->
 
         <nav aria-label="Page navigation">
           <ul class="pagination pagination-sm">

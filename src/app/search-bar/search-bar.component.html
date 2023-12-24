@@ -1,6 +1,7 @@
-<div class="search-container position-relative d-flex align-items-center" [ngClass]="{ 'home-page-style': isHomePage, 'resources-page-style': !isHomePage }">
+<div class="search-container position-relative d-flex align-items-center"
+  [ngClass]="{ 'home-page-style': isHomePage, 'resources-page-style': !isHomePage }">
   <label for="search"></label>
-  <input type="search" id="search" [(ngModel)]="searchService.inputQuery" (keyup.enter)="searchService.onSearch()" placeholder="Search (disabled)">
-
-  <div *ngIf="searchService.isLoading" class="ml-2">Searching...</div>
+  <input type="search" id="search" [(ngModel)]="searchService.inputQuery" (keyup.enter)="searchService.onSearch()" autocomplete="off"
+    placeholder="Search (disabled)">
+  <span *ngIf="searchService.isLoading" class="spinner-border spinner-border-sm" aria-hidden="true"></span>
 </div>
