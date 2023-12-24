@@ -1,0 +1,36 @@
+.search-container {
+    justify-content: center;
+}
+
+.search-container input {
+    width: 100%;
+    height: 50px;
+
+    padding: 20px;
+
+    border-radius: 25px;
+    border-width: 0px;
+}
+
+/* Page Styles */
+
+.home-page-style {
+    width: 650px;
+    text-align: center;
+}
+
+.resources-page-style {
+    padding: 10px;
+    width: 100%;
+    justify-content: left;
+
+}
+
+@media (max-width: 768px) {
+    .home-page-style {
+        width: 350px;
+        text-align: center;
+    }
+}
+
+/* Decoration UI */

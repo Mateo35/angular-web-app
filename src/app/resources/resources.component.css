@@ -1,0 +1,75 @@
+.split-container {
+    display: flex;
+    height: calc(100vh - 50px);
+    margin-top: 50px;
+}
+
+.left-tab {
+    flex: 1;
+    /* Take 1/5 of the available space */
+    background-color: var(--border-default-color);
+    border: 1px solid #f0f0f0;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.right-results {
+    flex: 4;
+    /* Take 4/5 of the available space */
+    background-color: var(--main-light-color);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+    position: relative;
+}
+
+/* Rectangles */
+
+.top-rectangle,
+.middle-rectangle,
+.bottom-rectangle {
+    flex: 1;
+    border: 1px solid #f0f0f0;
+    overflow: auto;
+}
+
+.middle-rectangle {
+    flex-grow: 20;
+}
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+    /* Adjust spacing between pagination items */
+}
+
+.pagination a {
+    text-decoration: none;
+    color: var(--main-accent-color);
+}
+
+/* Text */
+
+.text-content {
+    padding: 10px;
+    /* Add padding for internal content */
+    text-align: left;
+    /* Align text to the left */
+}
