@@ -35,11 +35,11 @@
 .middle-rectangle,
 .bottom-rectangle {
     flex: 1;
-    border: 1px solid #f0f0f0;
     overflow: auto;
 }
 
 .middle-rectangle {
+    border: 1px solid #f0f0f0;
     flex-grow: 20;
 }
 
@@ -76,17 +76,10 @@
 /* Grid */
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 60px;
-    padding: 30px;
-}
-
-.grid-item {
-    background-color: var(--accent-default-color);
-    text-align: center;
-    color: #ffffff;
-    height: 0;
-    padding-bottom: 100%;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 293px); /* width must be */
+    
+    gap: 50px;
+    padding: 10px;
 }

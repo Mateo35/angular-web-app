@@ -21,6 +21,8 @@
 
   --footer-top-color: #f9faf9;
   --footer-color: #eef0ef;
+
+  --item-border-radius: 4%;
 }
 
 body {
