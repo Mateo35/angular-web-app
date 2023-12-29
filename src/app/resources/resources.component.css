@@ -1,6 +1,5 @@
 .split-container {
     display: flex;
-    height: calc(100vh - 50px);
     margin-top: 50px;
 }
 
@@ -15,7 +14,7 @@
 }
 
 .right-results {
-    flex: 4;
+    flex: 9;
     /* Take 4/5 of the available space */
     background-color: var(--main-light-color);
     display: flex;
@@ -35,12 +34,16 @@
 .middle-rectangle,
 .bottom-rectangle {
     flex: 1;
-    overflow: auto;
+    overflow: none;
 }
 
 .middle-rectangle {
-    border: 1px solid #f0f0f0;
-    flex-grow: 20;
+    flex-grow: 22;
+}
+
+.middle-rectangle body {
+    height: 100%;
+    overflow-y: hidden;
 }
 
 /* Pagination */
@@ -61,7 +64,7 @@
 
 .pagination a {
     text-decoration: none;
-    color:  var(--text-default-color)
+    color: var(--text-default-color)
 }
 
 /* Text */
@@ -78,8 +81,9 @@
 .grid-container {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 293px); /* width must be */
-    
-    gap: 50px;
+    grid-template-columns: repeat(auto-fill, 293px);
+    /* width must be */
+
+    gap: 20px;
     padding: 10px;
 }

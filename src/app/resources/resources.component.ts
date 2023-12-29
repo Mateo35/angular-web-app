@@ -20,6 +20,7 @@ export class ResourcesComponent {
   // 
 
   private maxTitleLength = 58;
+  private maxCreatorLength = 28;
 
   constructor(public searchService: SearchService) { }
 
@@ -32,7 +33,6 @@ export class ResourcesComponent {
   private createItemList() {
     this.itemList = [];
     const responseItems = this.currentSearchResult.response.value;
-    console.log(this.currentSearchResult.response.value);
 
     for (var i = 0; i < responseItems.length; i++) {
       const currItem: ItemData = {
@@ -59,6 +59,9 @@ export class ResourcesComponent {
       if (currItem.title.length >= this.maxTitleLength)
         currItem.title = currItem.title.substring(0, this.maxTitleLength) + "...";
 
+      if (currItem.creator.length >= this.maxCreatorLength)
+        currItem.creator = currItem.creator.substring(0, this.maxCreatorLength) + "...";
+
       this.itemList.push(currItem);
     }
   }
@@ -83,7 +86,7 @@ export class ResourcesComponent {
     }
   }
 
-  SI_SYMBOL = ["", "k", "M", "G", "T", "P", "E"];
+  SI_SYMBOL = ["", "K", "M", "G", "T", "P", "E"];
   private formatNumber(num: number): string {
     var tier = Math.log10(Math.abs(num)) / 3 | 0;
 

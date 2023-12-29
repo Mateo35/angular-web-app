@@ -1,15 +1,16 @@
-<div class="container">
+<div class="c">
   <div class="split-container">
 
     <div class="left-tab" data-aos="fade-right">
       <!-- Left tab content here -->
-      <app-search-bar [isHomePage]="false"></app-search-bar>
 
     </div>
 
-    <div class="right-results" data-aos="fade-left">
+    <div class="right-results">
 
       <div class="top-rectangle">
+
+        <app-search-bar [isHomePage]="false"></app-search-bar>
 
         <div class="text-content">
           <p>{{searchSummaryText}}</p>

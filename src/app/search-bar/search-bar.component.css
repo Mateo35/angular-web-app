@@ -10,6 +10,7 @@
 
     border-radius: 25px;
     border-width: 0px;
+    border: 1px solid #ccc;
 }
 
 /* Page Styles */
@@ -21,9 +22,9 @@
 
 .resources-page-style {
     padding: 10px;
-    width: 100%;
+    width: 550px;
     justify-content: left;
-
+    flex-direction: row;
 }
 
 @media (max-width: 768px) {
