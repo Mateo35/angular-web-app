@@ -50,10 +50,10 @@ export class ResourcesComponent {
       currItem.index = i;
       currItem.url = responseItems[i].contentUrl;
       currItem.thumbnailUrl = responseItems[i].thumbnailUrl;
-      currItem.title = (responseItems[i].name as string);
+      currItem.title = responseItems[i].name;
       currItem.publisher = responseItems[i].publisher[0].name;
-      currItem.creator = responseItems[i].creator.name;
-      currItem.viewCount = this.formatNumber(responseItems[i].viewCount);
+      if(responseItems[i].creator) currItem.creator = responseItems[i].creator.name;
+      if(responseItems[i].viewCount) currItem.viewCount = this.formatNumber(responseItems[i].viewCount);
       currItem.date = this.formatDate(responseItems[i].datePublished);
 
       if (currItem.title.length >= this.maxTitleLength)

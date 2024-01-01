@@ -2,6 +2,6 @@
   [ngClass]="{ 'home-page-style': isHomePage, 'resources-page-style': !isHomePage }">
   <label for="search"></label>
   <input type="search" id="search" [(ngModel)]="searchService.inputQuery" (keyup.enter)="searchService.onSearch()" autocomplete="off"
-    placeholder="Search (disabled)">
+    placeholder="{{searchPrompt}}">
   <span *ngIf="searchService.isLoading" class="spinner-border spinner-border-sm" aria-hidden="true"></span>
 </div>

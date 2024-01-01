@@ -8,6 +8,7 @@ import { SearchService } from '../services/search.service';
 })
 export class SearchBarComponent {
   @Input() isHomePage: boolean = true;
+  @Input() searchPrompt: string = 'Get Started By Searching...';
 
   constructor(public searchService: SearchService) { }
 }

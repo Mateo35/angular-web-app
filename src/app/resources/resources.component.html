@@ -1,7 +1,7 @@
 <div class="c">
   <div class="split-container">
 
-    <div class="left-tab" data-aos="fade-right">
+    <div class="left-tab">
       <!-- Left tab content here -->
 
     </div>
@@ -21,10 +21,13 @@
       <div class="middle-rectangle">
 
         <div *ngIf="!searchService.isLoading" class="grid-container">
-
           <app-item *ngFor="let item of itemList" [data]="item"></app-item>
-
         </div>
+
+        <div *ngIf="searchService.isLoading" class="status-container">
+          <img src="../../assets/vid/MoleAnim.gif" alt="Mentor Mole" id="logo-img">
+        </div>
+
       </div>
 
       <div class="bottom-rectangle">

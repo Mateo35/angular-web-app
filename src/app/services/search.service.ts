@@ -69,7 +69,7 @@ export class SearchService {
     var processedQuery = queryInput;
 
     //other processing measures here
-    //processedQuery = processedQuery.concat(" \"course\" \"tutorial\" \"lesson\"")
+    processedQuery = processedQuery.concat(" \"course\" \"tutorial\" \"lesson\"")
 
     return processedQuery;
   }
