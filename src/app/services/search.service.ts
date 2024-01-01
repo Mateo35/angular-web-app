@@ -1,19 +1,22 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { ResourcesComponent } from '../resources/resources.component';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SearchService {
 
+  public onChangeSearchResult: EventEmitter<any> = new EventEmitter<any>();
+
   inputQuery = '';
-  searchResult: any;
+  private searchResult: any;
 
   private isSearchOnCooldown = false;
-  cooldownTimeMS = 5000;
+  private cooldownTimeMS = 5000;
 
-  isLoading: boolean = false;
+  public isLoading: boolean = false;
 
   private azureFuncURL = 'https://mentormolefunctions.azurewebsites.net/api/CallSearchAPI';
 
@@ -23,6 +26,12 @@ export class SearchService {
     if (this.inputQuery == '') return;
     if (this.isSearchOnCooldown) return
 
+    //navigate if necessary
+    if (this.router.url != '/resources') {
+      this.router.navigate(['/resources']);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
     this.setSearchCooldown();
     this.isLoading = true;
 
@@ -30,22 +39,19 @@ export class SearchService {
 
     this.search(searchQuery)
       .then(searchResult => {
-        //complete
-        this.searchResult = searchResult;
         this.isLoading = false;
 
-        if (this.router.url != '/resources')
-          this.router.navigate(['/resources']);
+        this.searchResult = searchResult;
+        this.onChangeSearchResult.emit(this.searchResult);
       })
       .catch(error => {
-        //error
-        console.error('An error occurred during the search:', error);
         this.isLoading = false;
+        console.error('An error occurred during the search:', error);
+        throw new Error('An error occurred during the search.');
       });
   }
 
   private async search(searchQuery: string): Promise<any> {
-
     console.log("Beginning search for", searchQuery);
 
     const url = `${this.azureFuncURL}?q=${searchQuery}`;
@@ -63,6 +69,7 @@ export class SearchService {
     var processedQuery = queryInput;
 
     //other processing measures here
+    processedQuery = processedQuery.concat(" \"course\" \"tutorial\" \"lesson\"")
 
     return processedQuery;
   }
@@ -71,6 +78,6 @@ export class SearchService {
     this.isSearchOnCooldown = true;
     setTimeout(() => {
       this.isSearchOnCooldown = false;
-    }, this.cooldownTimeMS); // Time
+    }, this.cooldownTimeMS); // cooldown time in milliseconds
   }
 }

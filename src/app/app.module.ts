@@ -12,6 +12,7 @@ import { SearchService } from './services/search.service';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { FormsModule } from '@angular/forms';
+import { ItemComponent } from './resources/item/item/item.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     ResourcesComponent,
     CommunityComponent,
     PagenotfoundComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
