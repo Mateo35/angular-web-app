@@ -15,7 +15,7 @@ export class ResourcesComponent {
   searchSummaryText = 'Waiting for input';
 
   totalItems = 0;
-  itemsPerPage = 6;
+  itemsPerPage = 35;
 
   // 
 
@@ -100,56 +100,10 @@ export class ResourcesComponent {
     return scaled.toFixed(1) + suffix;
   }
 
+  MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   private formatDate(dateString: string): string {
     const date = new Date(dateString);
-    return `${this.getMonthName(date.getMonth())} ${date.getDate()}, ${date.getFullYear()}`;
-  }
-
-  private getMonthName(num: number): string {
-    var output = '';
-    switch (num) {
-      case 0:
-        output = 'Jan';
-        break;
-      case 1:
-        output = 'Feb';
-        break;
-      case 2:
-        output = 'Mar';
-        break;
-      case 3:
-        output = 'Apr';
-        break;
-      case 4:
-        output = 'May';
-        break;
-      case 5:
-        output = 'Jun';
-        break;
-      case 6:
-        output = 'Jul';
-        break;
-      case 7:
-        output = 'Aug';
-        break;
-      case 8:
-        output = 'Sep';
-        break;
-      case 9:
-        output = 'Oct';
-        break;
-      case 10:
-        output = 'Nov';
-        break;
-      case 11:
-        output = 'Dec';
-        break;
-      default:
-        output = 'Err';
-        break;
-    }
-
-    return output;
+    return `${this.MONTHS[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
   }
 
   //
