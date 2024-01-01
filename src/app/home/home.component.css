@@ -1,0 +1,74 @@
+#hero {
+    width: 100%;
+    height: calc(80vh - 25px);
+    background: url("../../assets/img/BGMole.png") top center;
+    background-size: cover;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .container {
+    padding-top: 72px;
+}
+
+#hero h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: var(--main-light-color);
+    font-family: "Poppins", sans-serif;
+}
+
+#hero h2 {
+    color: var(--main-light-color);
+    margin: 10px 0 0 0;
+    font-size: 24px;
+}
+
+#logo-img {
+    position: relative;
+    height: 100%;
+
+    min-width: 300px;
+    width: calc(27vw);
+    max-width: 375px;
+
+    top: -22px;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        height: 100vh;
+    }
+
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    #logo-container {
+        margin-bottom: 10%;
+    }
+
+    #logo-img {
+        top: 30px;
+        min-width: 325px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}

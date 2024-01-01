@@ -21,6 +21,8 @@
 
   --footer-top-color: #f9faf9;
   --footer-color: #eef0ef;
+
+  --item-border-radius: 4%;
 }
 
 body {
@@ -135,7 +137,7 @@ h6 {
   background: var(--main-light-color);
   transition: all 0.5s;
   z-index: 997;
-  padding: 0px 0;
+  padding: 5px 0;
   box-shadow: 0px 0 18px rgba(55, 66, 59, 0.08);
 }
 
@@ -156,8 +158,8 @@ h6 {
 
 #header .logo img {
   position: relative;
-  top: -7px;
-  max-height: 75px;
+  top: -3px;
+  max-height: 40px;
 }
 
 /* Mobile Logo */
@@ -165,8 +167,8 @@ h6 {
 @media (max-width: 768px) {
   #header .logo img {
     position: relative;
-    top: -5px;
-    max-height: 45px;
+    top: -2px;
+    max-height: 30px;
   }
 }
 
@@ -434,163 +436,6 @@ h6 {
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
-}
-
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-#hero {
-  width: 100%;
-  text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.6);
-  height: 79vh;
-  background: url("assets/img/BGMole.png") top center;
-  background-size: cover;
-  position: relative;
-}
-
-#hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.0);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#hero .container {
-  padding-top: 72px;
-}
-
-@media (max-width: 992px) {
-  #hero .container {
-    padding-top: 62px;
-  }
-}
-
-#hero h1 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: var(--main-light-color);
-  font-family: "Poppins", sans-serif;
-}
-
-#hero h2 {
-  color: var(--main-light-color);
-  margin: 10px 0 0 0;
-  font-size: 24px;
-}
-
-#hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 35px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin-top: 30px;
-  border: 2px solid var(--main-light-color);
-  color: var(--main-light-color);
-}
-
-#hero .btn-get-started:hover {
-  background: var(--accent-default-color);
-  border: 2px solid var(--accent-default-color);
-}
-
-#search-bar-container {
-  justify-content: center;
-}
-
-.search-bar {
-  justify-content: left;
-  align-items: center;
-  background-color: var(--main-light-color);
-  border-radius: 25px;
-
-  margin-top: 10%;
-  height: 100%;
-  width: 60%;
-}
-
-@media (max-width: 768px) {
-  .search-bar {
-
-    justify-content: left;
-    align-items: center;
-    background-color: var(--main-light-color);
-    border-radius: 25px;
-
-    margin-top: 20%;
-    height: 100%;
-    width: 80%;
-  }
-}
-
-.search-bar:focus {
-  outline: none;
-}
-
-#search-icon {
-  padding-left: 15px;
-}
-
-.text-entry {
-  outline: none;
-  border: none;
-
-  height: 50px;
-  width: 100%;
-  border-radius: 25px;
-
-  font-family: "Poppins", sans-serif;
-
-}
-
-#search-logo {
-  margin-bottom: 7%;
-}
-
-@media (max-width: 768px) {
-  #search-logo {
-    margin-bottom: 20%;
-  }
-}
-
-#logo-img {
-  height: 320px;
-  width: 320px;
-}
-
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 768px) {
-  #hero {
-    height: 100vh;
-  }
-
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  #logo-img {
-    height: 200px;
-    width: 200px;
-  }
 }
 
 /*--------------------------------------------------------------

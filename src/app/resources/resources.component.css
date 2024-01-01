@@ -1,0 +1,100 @@
+.split-container {
+    display: flex;
+    margin-top: 50px;
+}
+
+.left-tab {
+    flex: 2;
+    background-color: var(--border-default-color);
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.right-results {
+    flex: 11;
+    background-color: var(--main-light-color);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    margin: 10px;
+
+    position: relative;
+}
+
+/* Rectangles */
+
+.top-rectangle,
+.middle-rectangle,
+.bottom-rectangle {
+    flex: 1;
+    overflow: none;
+}
+
+.middle-rectangle {
+    flex-grow: 22;
+}
+
+.middle-rectangle body {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: var(--text-default-color)
+}
+
+/* Text */
+
+.text-content {
+    padding: 10px;
+    /* Add padding for internal content */
+    text-align: left;
+    /* Align text to the left */
+}
+
+/* Grid */
+
+.grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 293px);
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Status */
+
+.status-container {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#logo-img {
+    width: 300px;
+    padding: 10px;
+   
+}

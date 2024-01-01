@@ -1,0 +1,20 @@
+<div class="grid-item">
+    <a href={{data.url}}>
+        <div class="thumbnail-container">
+            <img src="{{data.thumbnailUrl}}" alt="Thumbnail" class="thumbnail-image">
+        </div>
+        <div class="info-container">
+            <div class="title">
+                <p><strong>{{ data.title }}</strong></p>
+            </div>
+            <div class="small-information">
+                <div class="content-information">
+                    <p>{{ data.viewCount }} • {{ data.date}}</p>
+                </div>
+                <div class="creator-information">
+                    <p>{{ data.publisher }} > {{ data.creator }}</p>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>

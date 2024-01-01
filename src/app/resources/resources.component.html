@@ -1,7 +1,55 @@
-<!-- ======= Breadcrumbs ======= -->
-<div class="breadcrumbs" data-aos="fade-in">
-  <div class="container">
-    <h2>Resources</h2>
-    <p>Coming soon.</p>
+<div class="c">
+  <div class="split-container">
+
+    <div class="left-tab">
+      <!-- Left tab content here -->
+
+    </div>
+
+    <div class="right-results">
+
+      <div class="top-rectangle">
+
+        <app-search-bar [isHomePage]="false"></app-search-bar>
+
+        <div class="text-content">
+          <p>{{searchSummaryText}}</p>
+        </div>
+
+      </div>
+
+      <div class="middle-rectangle">
+
+        <div *ngIf="!searchService.isLoading" class="grid-container">
+          <app-item *ngFor="let item of itemList" [data]="item"></app-item>
+        </div>
+
+        <div *ngIf="searchService.isLoading" class="status-container">
+          <img src="../../assets/vid/MoleAnim.gif" alt="Mentor Mole" id="logo-img">
+        </div>
+
+      </div>
+
+      <div class="bottom-rectangle">
+
+        <nav aria-label="Page navigation">
+          <ul class="pagination pagination-sm">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link">1</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </div>
   </div>
-</div><!-- End Breadcrumbs -->
+</div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SearchService } from '../services/search.service';
 
 @Component({
@@ -7,23 +7,8 @@ import { SearchService } from '../services/search.service';
   styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent {
-  query = '';
-  searchResults: any;
+  @Input() isHomePage: boolean = true;
+  @Input() searchPrompt: string = 'Get Started By Searching...';
 
-  constructor(private searchService: SearchService) {}
-
-  onSearch() {
-    //temporary
-    return;
-    console.log(this.query);
-    this.searchService.search(this.query).subscribe(
-      (data) => {
-        this.searchResults = data;
-        console.log("Seach result:\n" + this.searchResults);
-      },
-      (error) => {
-        //console.error('Error:', error);
-      }
-    );
-  }
+  constructor(public searchService: SearchService) { }
 }
