@@ -83,7 +83,9 @@ export class ResourcesComponent {
     if (localItemList && localSearchSummaryText) {
       this.itemList = JSON.parse(localItemList);
       this.searchSummaryText = JSON.parse(localSearchSummaryText);
+      return true;
     }
+    return false;
   }
 
   SI_SYMBOL = ["", "K", "M", "G", "T", "P", "E"];
@@ -114,7 +116,11 @@ export class ResourcesComponent {
       this.onChangeSearchResultEvent();
     });
 
-    this.tryGetLocalStorage();
+    //if cannot find most recent search results in local storage
+    if(!this.tryGetLocalStorage())
+    {
+      
+    }
   }
 
   ngOnDestroy(): void {
