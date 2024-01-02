@@ -1,9 +1,10 @@
 /* Default Style */
 .search-container {
-    height: 60px;
-    width: 90vw;
-    max-width: 1000px;
+    height: 57px;
+    width: 85vw;
+    max-width: 900px;
 }
+
 .search-container input {
     width: 100%;
     height: 100%;
@@ -20,6 +21,7 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+
 .home-page-style input {
     padding: 25px;
 }
@@ -30,9 +32,17 @@
     padding: 10px;
 
 }
+
 .resources-page-style input {
     padding: 20px;
     border: 1px solid #ccc;
 
     font-size: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+    .resources-page-style {
+        width: 100%;
+
+    }
 }

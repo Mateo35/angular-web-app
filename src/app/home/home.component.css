@@ -35,11 +35,11 @@
     position: relative;
     height: 100%;
 
-    min-width: 300px;
-    width: calc(27vw);
-    max-width: 375px;
+    min-width: 225px;
+    width: calc(25vw);
+    max-width: 350px;
 
-    top: -22px;
+    top: -45px;
 }
 
 @media (max-width: 768px) {
