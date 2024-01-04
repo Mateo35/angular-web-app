@@ -118,17 +118,31 @@
 }
 
 .tab-grid {
+    margin-top: 25px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 8px;
+    gap: 12px;
 }
 
 /* Adjusted styles for the toggle buttons */
 .tab-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 1px solid #ccc;
+    height: 43px;
     padding: 8px;
     cursor: pointer;
-    border-radius: 4px;
+}
+
+.tab-option-switch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 43px;
+    padding: 8px;
+    cursor: pointer;
 }
 
 .section-bar {
@@ -138,7 +152,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-
     .left-tab {
         display: none;
     }

@@ -16,9 +16,28 @@
       <div class="tab-section">
         <div class="section-header"><strong>Category</strong></div>
         <div class="tab-grid">
-          <div class="tab-option">Art</div>
-          <div class="tab-option">Computer Science</div>
+          <div class="tab-option">Computer Sci.</div>
           <div class="tab-option">Math</div>
+          <div class="tab-option">Science</div>
+          <div class="tab-option">Music</div>
+          <div class="tab-option">Literature</div>
+          <div class="tab-option">Visual Arts</div>
+
+        </div>
+      </div>
+
+      <div class="section-bar"></div>
+
+      <div class="tab-section">
+        <div class="section-header"><strong>Settings</strong></div>
+        <div class="tab-grid">
+          <div class="tab-option-switch">
+            <div class="form-check form-switch course-search-switch" style="font-size: 13px;">
+              <input class="form-check-input" type="checkbox" [(ngModel)]="searchService.isSpecificSearch"
+                id="flexSwitchCheckDefault" style="cursor: pointer; font-size: 18px;">
+              <label class="form-check-label" for="flexSwitchCheckDefault"></label>Course Search
+            </div>
+          </div>
         </div>
       </div>
 

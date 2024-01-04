@@ -12,7 +12,7 @@ export class ResourcesComponent {
   currentSearchResult: any;
   itemList: ItemData[];
 
-  searchSummaryText = 'Waiting for input';
+  searchSummaryText = 'Waiting to start a search';
 
   totalItems = 0;
   itemsPerPage = 35;
@@ -73,7 +73,7 @@ export class ResourcesComponent {
 
   private updateSearchSummary() {
     this.totalItems = this.currentSearchResult.response.value.length;
-    this.searchSummaryText = `Showing results for "${this.currentSearchResult.query}" - ${this.itemsPerPage} in ${this.totalItems}`;
+    this.searchSummaryText = `Showing results for "${this.searchService.inputQuery}" (${this.totalItems})`;
   }
 
   private tryGetLocalStorage() {
