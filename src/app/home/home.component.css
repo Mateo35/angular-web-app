@@ -44,7 +44,7 @@
 
 @media (max-width: 768px) {
     #hero {
-        height: 100vh;
+        height: 83vh;
     }
 
     #hero h1 {
@@ -62,8 +62,8 @@
     }
 
     #logo-img {
-        top: 30px;
-        min-width: 325px;
+        top: -25px;
+        min-width: 260px;
     }
 }
 

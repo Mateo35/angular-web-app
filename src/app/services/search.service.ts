@@ -1,7 +1,6 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { ResourcesComponent } from '../resources/resources.component';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +14,8 @@ export class SearchService {
 
   private isSearchOnCooldown = false;
   private cooldownTimeMS = 5000;
+
+  isSpecificSearch: boolean = true;
 
   public isLoading: boolean = false;
 
@@ -69,7 +70,7 @@ export class SearchService {
     var processedQuery = queryInput;
 
     //other processing measures here
-    processedQuery = processedQuery.concat(" \"course\" \"tutorial\" \"lesson\"")
+    if(this.isSpecificSearch) processedQuery = processedQuery.concat(" \"course\" \"tutorial\" \"lesson\"")
 
     return processedQuery;
   }
